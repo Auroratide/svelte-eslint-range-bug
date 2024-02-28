@@ -13,5 +13,9 @@ pnpm install
 pnpm lint
 ```
 
+**The code that breaks this:**
+
+<pre><code>&lt;Component <mark>num={num ?? 1}</mark> /&gt;</code></pre>
+
 * Seems to only happen with Typescript
 * Only happens if the `indent` rule is set in eslint config
